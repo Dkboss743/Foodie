@@ -168,3 +168,9 @@ body {
 strong {
   font-weight: 500;
 }
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+  padding: 2rem 1rem;
+}
