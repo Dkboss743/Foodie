@@ -66,6 +66,12 @@ body {
   column-gap: 6.4rem;
   row-gap: 9.6rem;
 }
+.grid:not(:last-child) {
+  margin-bottom: 9.6rem;
+}
+.grid--5-cols {
+  grid-template-columns: repeat(5, 1fr);
+}
 .grid--2-cols {
   grid-template-columns: repeat(2, 1fr);
 }
@@ -115,10 +121,29 @@ body {
   margin-bottom: 1.6rem;
   letter-spacing: 0.75px;
 }
+.btn--form {
+  background-color: #45260a;
+  color: #dbc0a4;
+  align-self: center;
+  padding: 1.2rem;
+  display: inline-block;
+  font-size: 2rem;
+  text-decoration: none;
+  border-radius: 9px;
+  transition: all 0.3s;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.btn--form:hover,
+.btn--form:active {
+  transform: scale(1.02);
+  color: #dbc0a4;
+}
 .btn:link,
 .btn:visited {
   display: inline-block;
-  background-color: #e67e22;
   color: #fff;
   font-size: 2rem;
   padding: 1.6rem;
@@ -126,7 +151,10 @@ body {
   border-radius: 9px;
   transition: all 0.3s;
   font-weight: 600;
+  border: none;
+  cursor: pointer;
 }
+
 .btn--full:link,
 .btn--full:visited {
   background-color: #e67e22;
@@ -144,6 +172,9 @@ body {
   background-color: #fae5d3;
   box-shadow: inset 0 0 10px #fff;
   /* border: 3px solid #fff; */
+}
+.padding-reset {
+  padding: 0 !important;
 }
 .margin-bottom-mo {
   margin-bottom: 4.8rem !important;
@@ -173,4 +204,8 @@ strong {
   flex-direction: column;
   gap: 2.4rem;
   padding: 2rem 1rem;
+}
+*:focus {
+  outline: none;
+  box-shadow: 0 0 0.8rem rgba(235, 125, 34, 0.5);
 }

@@ -17,7 +17,7 @@
 .main-nav-list {
   list-style: none;
   display: flex;
-  gap: 3.2rem;
+  gap: 4.8rem;
   align-items: center;
 }
 .main-nav-link:link,
@@ -52,6 +52,7 @@
   background-color: #fae5d3;
   padding: 4.8rem 0 9.6rem 0;
 }
+
 .hero {
   padding: 0 3.2rem;
   max-width: 130rem;
@@ -69,7 +70,7 @@
 }
 
 .hero-img {
-  width: 100%;
+  max-width: 100%;
 }
 .delivered-meals {
   display: flex;
@@ -80,7 +81,7 @@
 }
 .delivered-imgs img {
   height: 4.8rem;
-  width: 4.8rem;
+  max-width: 4.8rem;
   border-radius: 50%;
   margin-right: -1.9rem;
   border: 3px solid #fae5d3;
@@ -134,7 +135,7 @@
   content: "";
   position: absolute;
   height: 60%;
-  width: 60%;
+  max-width: 60%;
   /* It also works by adding padding */
   /* padding-bottom: 60%;  */
   border-radius: 50%;
@@ -145,14 +146,14 @@
   content: "";
   position: absolute;
   height: 75%;
-  width: 75%;
+  max-width: 75%;
   border-radius: 50%;
   background-color: #f8dfcb;
   z-index: -2;
   box-shadow: 0 0 100px #ffab62b2;
 }
 .step-img {
-  width: 45%;
+  max-width: 45%;
   /* margin-left: 50%; */
   /* transform: translate(-50%, 0); */
 }
@@ -230,11 +231,11 @@
 }
 .meal-icon {
   height: 2.4rem;
-  width: 2.4rem;
+  max-width: 2.4rem;
   color: #c76612;
 }
 .meal-img {
-  width: 100%;
+  max-width: 100%;
 }
 
 .diets {
@@ -251,7 +252,7 @@
 .diets-icon {
   color: #c76612;
   height: 3rem;
-  width: 3rem;
+  max-width: 3rem;
 }
 .diets-head {
   margin-bottom: 0;
@@ -280,7 +281,7 @@
   column-gap: 6rem;
 }
 .testimonial-img {
-  width: 6.4rem;
+  max-width: 6.4rem;
   border-radius: 50%;
   margin-bottom: 1.2rem;
 }
@@ -304,7 +305,7 @@
 }
 
 .gallery-item img {
-  width: 100%;
+  max-width: 100%;
   border-radius: 4px;
   display: block;
   transition: all 0.3s;
@@ -316,7 +317,7 @@
 /* Pricing table */
 /* ################### */
 .pricing-plan {
-  width: 80%;
+  max-width: 80%;
   background-color: #fcf2ea;
   border-radius: 11px;
   padding: 4.8rem;
@@ -365,7 +366,7 @@
   content: "Best Value";
   position: absolute;
   display: block;
-  width: 100%;
+  max-width: 100%;
   background-color: #ffd43b;
   color: #000;
   font-size: 2rem;
@@ -373,8 +374,8 @@
   padding: 1.2rem;
   text-align: center;
   text-transform: uppercase;
-  top: 10%;
-  right: -35%;
+  top: 6%;
+  right: -40%;
   transform: rotate(45deg);
 }
 
@@ -384,3 +385,191 @@
   left: 50%;
   transform: translateX(-50%);
 } */
+.plan-details {
+  font-size: 1.6rem;
+  line-height: 1.6;
+  margin-bottom: 9.6rem;
+}
+.feature-icon {
+  height: 4rem;
+  max-width: 4rem;
+  padding: 1.8rem;
+  color: #e67e22;
+  margin-bottom: 3.2rem;
+  border-radius: 50%;
+  background-color: #fcf2ea;
+}
+.feature-text {
+  font-size: 1.8rem;
+  line-height: 1.5;
+}
+.feature-title {
+  font-size: 2.6rem;
+  color: #333;
+  font-weight: 700;
+  margin-bottom: 1.6rem;
+}
+/* ########################### */
+/* CTA SECTION */
+/* ########################### */
+.section-pricing {
+  padding: 9.6rem;
+}
+.cta {
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  /* background-color: #f8dfcb; */
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
+  border-radius: 11px;
+  background-image: linear-gradient(90deg, #e67e22, #f5cba7);
+}
+.cta-img {
+  max-width: 100%;
+  height: 100%;
+}
+.cta-img-box {
+  background-image: linear-gradient(
+      90deg,
+      rgba(230, 125, 34, 0.27),
+      rgba(245, 203, 167, 0.224)
+    ),
+    url("../img/eating.jpg");
+  background-size: cover;
+}
+.cta .heading-secondary {
+  color: #2e1907;
+  margin-bottom: 3.2rem;
+}
+.cta-text-box {
+  color: #2e1907;
+  padding: 4.8rem 6.4rem;
+}
+.cta-text {
+  font-size: 1.8rem;
+  line-height: 1.8;
+  margin-bottom: 4.8rem;
+}
+.cta-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 3.2rem;
+  row-gap: 2.4rem;
+}
+.cta-form label {
+  display: block;
+  font-size: 1.6em;
+  height: 20%;
+  font-weight: 500;
+  margin-bottom: 0.7rem;
+}
+.cta-form input,
+.cta-form select {
+  max-width: 100%;
+  height: 70%;
+  font-size: 1.6rem;
+  padding-left: 1.2rem;
+  color: inherit;
+  font-family: inherit;
+  background-color: #fae5d3;
+  border-radius: 9px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s;
+}
+.cta-form input::placeholder {
+  color: #888;
+}
+.cta-form button {
+  border: none;
+  cursor: pointer;
+}
+.cta-text-box div {
+  margin-bottom: 2.3rem;
+  height: 7rem;
+}
+.cta-form input:hover {
+  transform: scale(1.02);
+}
+.cta *:focus {
+  outline: none;
+  box-shadow: 0 0 0.8rem rgba(253, 242, 233, 0.5);
+}
+/* ########################## */
+
+/* Footer */
+/* ########################## */
+.footer {
+  padding: 15rem 0;
+  border-top: 1px;
+}
+.footer-heading {
+  font-size: 1.8rem;
+  font-weight: 500;
+  margin-bottom: 3.2rem;
+}
+.footer-logo {
+  display: block;
+  margin-bottom: 3.6rem;
+}
+
+.social-links {
+  list-style: none;
+  display: flex;
+
+  gap: 2.4rem;
+}
+.social-links ion-icon {
+  height: 2.4rem;
+  max-width: 2.4rem;
+  margin-bottom: 2.4rem;
+}
+.footer-nav {
+  list-style: none;
+  font-size: 1.2rem;
+  color: #888;
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+.copyright {
+  max-width: 100%;
+  font-size: 1.4rem;
+  line-height: 1.5;
+  display: block;
+  align-items: flex-end;
+}
+.footer-link:link,
+.footer-link:visited {
+  text-decoration: none;
+  font-size: 1.6rem;
+  color: #767676;
+  transition: all 0.3s;
+}
+.footer-link:hover,
+.footer-link:active {
+  color: #555;
+}
+.contacts {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  font-size: 1.6rem;
+  font-style: normal;
+}
+.address-footer {
+  color: #767676;
+  line-height: 1.5;
+  margin-bottom: 1.2rem;
+}
+.logo-col {
+  display: flex;
+  flex-direction: column;
+}
+.copyright-container {
+  margin-top: auto;
+}
+.grid--footer {
+  grid-template-columns: 1.5fr 2fr 1fr 1fr 1fr;
+}
+
+/* ######################### */
