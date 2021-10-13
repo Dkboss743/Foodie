@@ -111,27 +111,26 @@ Tables*/
     display: block;
   }
   .main-nav {
-    background-color: rgba(255, 255, 255, 0.97);
+    background-color: rgba(255, 255, 255, 0.8);
     position: absolute;
+    backdrop-filter: blur(5px);
     top: 0;
     right: 0;
-    width: 100%;
+    /* width: 100vw; */
+    display: none;
     height: 100vh;
-    background-color: #fff;
-    display: flex;
     align-items: center;
     justify-content: center;
     /* hide it */
-
+    display: flex;
     transition: all 0.5s ease-in;
-
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
-    transform: translateX(0);
+    transform: translateX(100%);
   }
-
   .nav-open .main-nav {
+    width: 100vw;
     pointer-events: auto;
     visibility: visible;
     opacity: 1;
@@ -182,6 +181,9 @@ Tables*/
 }
 /* Below 544px (phones) */
 @media (max-width: 34em) {
+  .section-featured {
+    padding: 5.2rem 0;
+  }
   .grid {
     row-gap: 4.8rem;
   }
@@ -246,5 +248,54 @@ Tables*/
   }
   .cta-text-box {
     padding: 2.4rem 3.2rem;
+  }
+}
+/* for safari flexbox add gap */
+.no-flexbox-gap .main-nav-list li:not(:last-child) {
+  margin-right: 4.8rem;
+}
+
+.no-flexbox-gap .list-item:not(:last-child) {
+  margin-bottom: 1.6rem;
+}
+
+.no-flexbox-gap .list-icon:not(:last-child) {
+  margin-right: 1.6rem;
+}
+
+.no-flexbox-gap .delivered-faces {
+  margin-right: 1.6rem;
+}
+
+.no-flexbox-gap .meal-attribute:not(:last-child) {
+  margin-bottom: 2rem;
+}
+
+.no-flexbox-gap .meal-icon {
+  margin-right: 1.6rem;
+}
+
+.no-flexbox-gap .footer-row div:not(:last-child) {
+  margin-right: 6.4rem;
+}
+
+.no-flexbox-gap .social-links li:not(:last-child) {
+  margin-right: 2.4rem;
+}
+
+.no-flexbox-gap .footer-nav li:not(:last-child) {
+  margin-bottom: 2.4rem;
+}
+
+@media (max-width: 75em) {
+  .no-flexbox-gap .main-nav-list li:not(:last-child) {
+    margin-right: 3.2rem;
+  }
+}
+
+@media (max-width: 59em) {
+  .no-flexbox-gap .main-nav-list li:not(:last-child) {
+    margin-right: 0;
+    margin-bottom: 4.8rem;
   }
 }
