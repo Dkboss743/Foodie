@@ -6,7 +6,6 @@ btnNav.addEventListener("click", function () {
 });
 ///////////////////////////////////////////
 //smooth scrolling
-console.log("HI");
 const allLinks = document.querySelectorAll("a:link");
 allLinks.forEach(function (link) {
   link.addEventListener("click", function (e) {
