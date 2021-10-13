@@ -80,11 +80,15 @@
             </div>
           </div>
           <div class="hero-img-box">
-            <img
-              src="img/hero.png"
-              alt="Enjoy food,means and food in bowls on table"
-              class="hero-img"
-            />
+            <picture>
+              <source srcset="img/hero.webp" type="image/webp" />
+              <source srcset="img/hero.png" type="image/png" />
+              <img
+                src="img/hero.png"
+                alt="Enjoy food,means and food in bowls on table"
+                class="hero-img"
+              />
+            </picture>
           </div>
         </div>
       </section>
@@ -506,6 +510,7 @@
                     placeholder="Divyash Kumar"
                     title="Name"
                     required
+                    name="name"
                   />
                 </div>
                 <div>
@@ -515,12 +520,13 @@
                     type="email"
                     placeholder="dk@example.com"
                     title="email"
+                    name="email"
                     required
                   />
                 </div>
                 <div>
                   <label for="select-where">where you hear of us?</label>
-                  <select id="select-where" required>
+                  <select id="select-where" name="select-where" required>
                     <option disabled selected value="">
                       Please choose one option:
                     </option>
